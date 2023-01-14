@@ -20,7 +20,7 @@ const router = useRouter() // get a reference to our vue router
 const register = () => {
   // need .value because ref()
   const auth = getAuth() // from firebase/auth
-  createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+  createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((data) => {
       console.log("Successfully registered!")
       console.log(auth.currentUser)
