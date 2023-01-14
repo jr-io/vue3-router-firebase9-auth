@@ -29,7 +29,7 @@ const getCurrentUser = () => {
   })
 }
 
-// before vue-router processes it's routes
+// before vue-router processes it's hooks
 router.beforeEach(async (to, from, next) => {
   if (to.matched.some((record) => record.meta.requiresAuth)) {
     if (await getCurrentUser()) {
