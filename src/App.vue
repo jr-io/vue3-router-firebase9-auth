@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth"
+import router from './router';
 
 const isLoggedIn = ref(false)
 
@@ -17,9 +18,8 @@ onMounted(() => {
 });
 
 const handleSignOut = () => {
-  signOut(auth).then(() => {
-    router.push("/")
-  })
+  signOut(auth)
+  router.push("/")
 }
 </script>
 
