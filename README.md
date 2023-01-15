@@ -1,7 +1,6 @@
-# Vue 3 + Vite
+# Vue3 + vue-router + firebase9 authentication
+This is an example application for restricting route(s) based on whether or not a user is logged in.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Warning!!
+This app only serves as an example for "how" to use vue-router alongside firebase/auth, and should not be used in producton.
+If you want to use this as a template for production, you'll need to add more verification methods to increase security.
